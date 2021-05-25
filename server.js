@@ -19,6 +19,10 @@ app.post("/data", (req, res) => {
   console.log(req.body);
 });
 
+app.get("/about", (req, res) => {
+  res.sendFile("public/about.html");
+});
+
 app.listen(5000, () => {
   console.log(`pls check on http://localhost:5000`);
 });
