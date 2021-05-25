@@ -19,7 +19,7 @@ app.post("/data", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile("public/about.html");
+  res.sendFile(path.resolve(__dirname, "public/about.html"));
 });
 
 app.listen(5000, () => {
