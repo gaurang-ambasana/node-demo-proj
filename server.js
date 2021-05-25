@@ -3,7 +3,6 @@ const path = require("path");
 const bodyParser = require("body-parser");
 
 const app = express();
-console.log(app);
 
 const publicData = path.resolve(__dirname, "public");
 
